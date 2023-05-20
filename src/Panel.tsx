@@ -249,7 +249,6 @@ class SwipeablePanel extends Component<SwipeablePanelProps, SwipeablePanelState>
             { transform: this.state.pan.getTranslateTransform() },
             style,
           ]}
-          {...this._panResponder.panHandlers}
         >
           {!this.props.noBar && <Bar barStyle={barStyle} barContainerStyle={barContainerStyle} />}
           {this.props.showCloseButton && (
